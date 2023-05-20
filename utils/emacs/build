@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+./configure 	--prefix=/usr	\
+		--without-gif	\
+		--without-rsvg	\
+		--with-pgtk	\
+		--with-cairo	\
+		--with-modules	\
+		--with-native-compilation	\
+		--enable-link-time-optimization	\
+
+make
+make install
