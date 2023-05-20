@@ -5,4 +5,22 @@ This is my kiss linux user software repository. The `personal` repo contains sof
 
 Any updates regarding the specifics of the repos will be provided here.
 
+## package list
+
+--fonts
+ |
+ |--cantarell-fonts (0.303)
+ |--ttf-cascadia-code (2111.01)
+
+--personal
+ |
+ |--slstatus (git)
+
+ --utils
+  |
+  |--fuzzel (1.9.1)
+  |--htop (3.2.2)
+  |--os-prober (1.81)
+  |--perfmode (3.3.1)
+
 ```
