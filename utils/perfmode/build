@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+make pkg $MAKEFLAGS
+mkdir -p $DESTDIR/usr/bin
+install -Dm755 ./perfmode $DESTDIR/usr/bin

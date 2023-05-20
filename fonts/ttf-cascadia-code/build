@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+OUT="$DESTDIR/usr/share/fonts/TTF/cascadia-code"
+OUTST="$DESTDIR/usr/share/fonts/TTF/cascadia-code/static"
+
+VER="2111.01"
+FILE="CascadiaCode-$VER.zip"
+
+unzip $FILE
+mkdir -p $OUTST
+cp -Lr ./ttf/*.ttf  $OUT/
+cp -LR ./ttf/static/*.ttf $OUTST/

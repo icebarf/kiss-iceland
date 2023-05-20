@@ -1,0 +1,25 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+	patch -p1 < "$patch"
+done
+
+make
+
+mkdir --parents "$DESTDIR/usr/bin"
+mkdir --parents "$DESTDIR/usr/lib/os-prober"
+mkdir --parents "$DESTDIR/usr/share/os-prober"
+mkdir --parents "$DESTDIR/var/lib/os-prober"
+
+install -Dm755 linux-boot-prober -t "$DESTDIR/usr/bin"
+install -Dm755 os-prober -t "$DESTDIR/usr/bin"
+install -Dm755 "newns" -t "$DESTDIR/usr/lib/os-prober"
+install -Dm755 "common.sh" -t "$DESTDIR/usr/share/os-prober"
+
+for dir in linux-boot-probes linux-boot-probes/mounted os-probes os-probes/init os-probes/mounted; do
+	install -Dm755 "$dir/common"/* -t "$DESTDIR/usr/lib/$dir"
+	[ -d "$dir/x86" ] && cp -r "$dir/x86"/* "$DESTDIR/usr/lib/$dir"
+done
+
+install -Dm755 "os-probes/mounted/powerpc/20macosx" -t "$DESTDIR/usr/lib/os-probes/mounted"
+install -dm755 "$DESTDIR/var/lib/os-prober"

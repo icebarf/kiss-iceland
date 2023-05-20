@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+mkdir -p build/release
+cd build/release
+
+meson setup ../.. --buildtype=release \
+	--prefix=/usr	\
+	-Denable-cairo=enabled	\
+	-Dpng-backend=libpng	\
+	-Dsvg-backend=none
+
+ninja
+ninja install

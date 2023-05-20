@@ -1,0 +1,39 @@
+diff --git a/common.sh b/common.sh
+index e1646d4..ec8d1f0 100644
+--- a/common.sh
++++ b/common.sh
+@@ -59,7 +59,7 @@ cache_progname() {
+ 
+ log() {
+   cache_progname
+-  logger -t "$progname" "$@"
++  printf "%s %s" "$progname" "$@"
+ }
+ 
+ error() {
+diff --git a/os-probes/init/common/10filesystems b/os-probes/init/common/10filesystems
+index f50e55e..ce43ba3 100755
+--- a/os-probes/init/common/10filesystems
++++ b/os-probes/init/common/10filesystems
+@@ -26,7 +26,7 @@ if [ ! -e /var/lib/os-prober/modules ]; then
+ 			fs-*)
+ 				;;
+ 			*)
+-				modprobe "$fs" 2>/dev/null | logger -t os-prober
++				modprobe "$fs" 2>/dev/null | printf "os-prober"
+ 				;;
+ 		esac
+ 	done
+diff --git a/os-probes/mounted/powerpc/20macosx b/os-probes/mounted/powerpc/20macosx
+index 2fc7e85..a2b9c34 100755
+--- a/os-probes/mounted/powerpc/20macosx
++++ b/os-probes/mounted/powerpc/20macosx
+@@ -8,7 +8,7 @@ type="$3"
+ 
+ debug() {
+   if [ -z "$OS_PROBER_DISABLE_DEBUG" ]; then
+-    logger -t macosx-prober "debug: $@"
++    printf "%s %s" "macosx-prober" "debug: $@"
+   fi
+ }
+ 

@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+./autogen.sh
+
+./configure 	--prefix="$DESTDIR/usr"		\
+		--enable-unicode		\
+		--enable-static			\
+		--with-proc			\
+
+make
+make install

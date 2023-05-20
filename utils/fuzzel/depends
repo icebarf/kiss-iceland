@@ -1,0 +1,10 @@
+cairo
+fcft
+libxkbcommon
+libpng
+meson	make
+pixman
+scdoc	make
+tllist	make
+wayland
+wayland-protocols	make

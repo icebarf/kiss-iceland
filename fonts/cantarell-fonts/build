@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+OUT="$DESTDIR/usr/share/fonts/OTF/cantarell"
+
+mkdir -p $OUT
+cp -Lr prebuilt/*.otf $OUT

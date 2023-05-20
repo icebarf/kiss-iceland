@@ -1,0 +1,2 @@
+git+https://salsa.debian.org/installer-team/os-prober.git
+patches/logger-delete.patch
