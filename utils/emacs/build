@@ -1,23 +1,31 @@
 #!/bin/sh -e
 
+make extraclean
+./autogen.sh
 ./configure 	--prefix=/usr \
+		--enable-link-time-optimization \
+		--with-cairo \
+        --with-gnutls \
+        --with-modules \
+		--with-native-compilation \
+		--with-pgtk \
+        --with-x=no \
+        --without-dbus \
         --without-lcms2 \
         --without-libsystemd \
 		--without-gif \
+        --without-gconf \
+        --without-gsettings \
+        --without-m17n-flt \
 		--without-rsvg \
+        --without-selinux \
         --without-xft \
         --without-xaw3d \
         --without-xim \
         --without-xdbe \
-        --without-dbus \
-        --without-gsettings \
-        --without-selinux \
-		--with-pgtk \
-		--with-cairo \
-		--with-modules \
-		--with-native-compilation \
-        --with-x-tookit=gtk3 \
-		--enable-link-time-optimization \
 
-make
+make 
 make install
+
+cp ./emacsc "$DESTDIR/usr/bin"
+chmod +x "$DESTDIR/usr/bin/emacsc"

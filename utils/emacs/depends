@@ -1,7 +1,11 @@
 alsa-lib
+autoconf    make
 cairo
+fontconfig
 freetype-harfbuzz
 gcc
+gdk-pixbuf
+glib
 glibc
 gmp
 gnutls
@@ -10,6 +14,10 @@ libjpeg-turbo
 libpng
 libwebp
 libxml2
+mailutils
 ncurses
+pango
+sqlite
+texinfo     make
 tiff
 zlib
