@@ -7,6 +7,10 @@ Any updates regarding the specifics of the repos will be provided here.
 
 ## package list
 
+--core
+ |
+ |--gcc (13.1.0, libgccjit enabled)
+
 --fonts
  |
  |--cantarell-fonts (0.303)
