@@ -27,5 +27,6 @@ Any updates regarding the specifics of the repos will be provided here.
   |--kakoune (git)
   |--os-prober (1.81)
   |--perfmode (3.3.1)
+  |--texinfo (7.0)
 
 ```
