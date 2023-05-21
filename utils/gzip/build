@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+unzip gzip-1.12
+cd gzip-1.12
+./configure --prefix=/usr
+make
+make install

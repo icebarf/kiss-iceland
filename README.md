@@ -23,6 +23,7 @@ Any updates regarding the specifics of the repos will be provided here.
  --utils
   |
   |--fuzzel (1.9.1)
+  |--gzip (1.12)
   |--htop (3.2.2)
   |--kakoune (git)
   |--mailutils (3.16)
