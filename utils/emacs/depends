@@ -1,3 +1,15 @@
-tiff
+alsa-lib
+cairo
+freetype-harfbuzz
+gcc
+glibc
+gmp
+gnutls
+gtk+3
 libjpeg-turbo
 libpng
+libwebp
+libxml2
+ncurses
+tiff
+zlib
