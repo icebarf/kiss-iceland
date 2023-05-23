@@ -10,6 +10,7 @@ Any updates regarding the specifics of the repos will be provided here.
 --core
  |
  |--gcc (13.1.0, libgccjit enabled)
+ |--llvm (16.0.0, LTO enabled)
 
 --fonts
  |
