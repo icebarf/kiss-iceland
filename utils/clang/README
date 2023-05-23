@@ -11,7 +11,8 @@ It is designed to act as a drop-in replacement for the GNU Compiler Collection
 extensions. Its contributors include Apple, Microsoft, Google, ARM, Sony,
 Intel and Advanced Micro Devices (AMD). [0]
 
-The iceland version enables LTO by default.
+The iceland version enables LTO by default and compiles the 'clang-tools-extra'
+subproject.
 
 Upstream: https://clang.llvm.org/
 
