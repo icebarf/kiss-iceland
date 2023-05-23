@@ -23,11 +23,12 @@ Any updates regarding the specifics of the repos will be provided here.
 
  --utils
   |
+  |--clang (16.0.0, LTO enabled)
   |--emacs (29.0.91)
   |--fuzzel (1.9.1)
   |--gzip (1.12)
   |--htop (3.2.2)
-  |--kakoune (git)
+  |--kakoune (git, dev branch)
   |--mailutils (3.16)
   |--os-prober (1.81)
   |--perfmode (3.3.1)
