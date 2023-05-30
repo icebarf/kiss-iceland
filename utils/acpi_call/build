@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+script=examples/turn_off_gpu.sh
+
+mkdir -p $DESTDIR/usr/bin
+
+
+make
+$KISS_SU make install
+
+chmod +x $script
+cp $script $DESTDIR/usr/bin/turn_off_gpu -v

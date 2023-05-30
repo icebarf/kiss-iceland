@@ -22,6 +22,7 @@ Any updates regarding the specifics of the repos will be provided here.
 
  --utils
   |
+  |--acpi_call (1.2.2, nixOS maintained)
   |--clang (15.0.7, includes `clang-tools-extra`)
   |--emacs (29.0.91)
   |--fuzzel (1.9.1)
