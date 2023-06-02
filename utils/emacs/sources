@@ -1,2 +1,3 @@
 http://git.savannah.gnu.org/cgit/emacs.git/snapshot/emacs-29.0.91.tar.gz
 files/emacsc
+patches/0001-check-stream.avail_in-as-well-when-looping-to-inflat.patch

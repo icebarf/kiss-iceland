@@ -10,8 +10,10 @@ glibc
 gmp
 gnutls
 gtk+3
+imagemagick
 libjpeg-turbo
 libpng
+librsvg
 libwebp
 libxml2
 mailutils
