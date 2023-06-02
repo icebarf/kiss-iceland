@@ -1,0 +1,3 @@
+#!/bin/sh
+
+$KISS_SU fc-cache -fv

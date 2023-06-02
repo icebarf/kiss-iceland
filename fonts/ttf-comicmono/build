@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+PREFIX=/usr
+install -Dm544 ./ComicMono.ttf $DESTDIR/$PREFIX/share/fonts/TTF
+install -Dm544 ./ComicMono-Bold.ttf $DESTDIR/$PREFIX/share/fonts/TTF
