@@ -8,5 +8,10 @@ FILE="CascadiaCode-$VER.zip"
 
 unzip $FILE
 mkdir -p $OUTST
-cp -Lr ./ttf/*.ttf  $OUT/
-cp -LR ./ttf/static/*.ttf $OUTST/
+for ttf in ttf/*.ttf; do
+    install -Dm644 "$ttf" "$OUT"
+done
+
+for ttf in ttf/static/*.ttf; do
+    install -Dm 644 "$ttf" "$OUTST"
+done

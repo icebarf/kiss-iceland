@@ -3,4 +3,9 @@
 OUT="$DESTDIR/usr/share/fonts/OTF/cantarell"
 
 mkdir -p $OUT
+
 cp -Lr prebuilt/*.otf $OUT
+
+for otf in prebuilt/*.otf; do
+    install -Dm644 "$otf" "$OUT"
+done
