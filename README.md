@@ -34,7 +34,7 @@ Any updates regarding the specifics of the repos will be provided here.
   |--librsvg (2.56.1)
   |--mailutils (3.16)
   |--os-prober (1.81)
-  |--perfmode (3.3.1)
-  |--texinfo (7.0)
+  |--perfmode (3.4.0)
+  |--texinfo (7.0.3)
 
 ```
