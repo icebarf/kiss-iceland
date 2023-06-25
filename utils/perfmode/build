@@ -1,5 +1,5 @@
 #!/bin/sh -e
 
+make pkg $MAKEFLAGS
 mkdir -p $DESTDIR/usr/bin
-make
-PREFIX=/usr make install
+install -Dm755 ./perfmode $DESTDIR/usr/bin
