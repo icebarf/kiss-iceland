@@ -1,4 +1,7 @@
 #!/bin/sh -e
 
+mkdir -p "$DESTDIR$PREFIX/bin"
+mkdir -p "$DESTDIR$PREFIX/share/man/man1/"
+
 make install
 make install-man
