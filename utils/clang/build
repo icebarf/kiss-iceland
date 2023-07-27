@@ -2,13 +2,10 @@
 
 export DESTDIR="$1"
 
-# ad-hoc solution to package in clang-tools-extra
-mkdir tools -p
-curl -fLO https://github.com/llvm/llvm-project/releases/download/llvmorg-15.0.7/clang-tools-extra-15.0.7.src.tar.xz
-tar xvf clang-tools-extra*
-mv clang-tools-extra-15.0.7.src tools/extra
+mkdir --parents clang/tools
+mv clang-tools-extra clang/tools/extra
 
-
+cd clang
 cmake -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
