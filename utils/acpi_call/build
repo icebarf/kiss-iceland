@@ -5,7 +5,7 @@ script=examples/turn_off_gpu.sh
 mkdir -p $DESTDIR/usr/bin
 
 
-make
+$KISS_SU make
 $KISS_SU make install
 
 chmod +x $script
