@@ -26,7 +26,7 @@ Any updates regarding the specifics of the repos will be provided here.
  |
  |--acpi_call (1.2.2, nixOS maintained)
  |--clang (16.0.6, includes `clang-tools-extra`)
- |--dotmg (1.1.2)
+ |--dotmg (1.1.3)
  |--emacs (29.1)
  |--ffmpeg (6.0, patch for binutils)
  |--fuzzel (1.9.2)
