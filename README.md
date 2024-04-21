@@ -34,5 +34,6 @@ Any updates regarding the specifics of the repos will be provided here.
  |--os-prober (1.81)
  |--perfmode (3.4.0)
  |--texinfo (7.1)
+ |--tlp (1.6.1)
 
 ```
