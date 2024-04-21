@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+export DESTDIR="$1"
+export PREFIX="/usr"
 mkdir -p "$DESTDIR$PREFIX/bin"
 mkdir -p "$DESTDIR$PREFIX/share/man/man1/"
 
