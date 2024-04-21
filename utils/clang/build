@@ -2,6 +2,8 @@
 
 export DESTDIR="$1"
 
+patch -p1 < musl-targets.patch
+
 mkdir --parents clang/tools
 mv clang-tools-extra clang/tools/extra
 
@@ -13,6 +15,7 @@ cmake -B build \
     -DLLVM_ENABLE_RTTI=ON \
     -DLLVM_ENABLE_EH=ON \
     -DLLVM_ENABLE_LIBXML2=OFF \
+    -DLLVM_INCLUDE_TESTS=OFF \
     -DCLANG_BUILD_EXAMPLES=OFF \
     -DCLANG_INCLUDE_DOCS=OFF \
     -DCLANG_INCLUDE_TESTS=OFF \
