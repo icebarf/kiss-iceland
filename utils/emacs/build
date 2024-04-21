@@ -24,7 +24,7 @@ make extraclean
 	     --without-gsettings \
 	     --without-m17n-flt \
 	     --without-selinux \
-       --without-x \
+	     --without-x \
 	     --without-xft \
 	     --without-xaw3d \
 	     --without-xim \
