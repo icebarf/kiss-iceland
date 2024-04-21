@@ -1,0 +1,21 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+export TLP_WITH_ELOGIND=0
+export TLP_WITH_SYSTEMD=0
+
+mkdir -p "$1/usr/share/man"
+
+make install
+make install-man
+
+# Remove unnecessary stuff
+rm -rf "$1/lib/elogind"
+rm -rf "$1/usr/lib/NetworkManager"
+rm -rf "$1/lib/systemd"
+
+# Install runit service
+mkdir -p "$1/etc/sv/tlp"
+cp -f tlp.run "$1/etc/sv/tlp/run"
+ln -sf /run/runit/supervise.tlp "$1/etc/sv/tlp/supervise"

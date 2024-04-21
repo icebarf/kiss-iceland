@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/sbin/tlp init start 2>&1
