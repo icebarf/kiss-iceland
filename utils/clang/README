@@ -11,6 +11,9 @@ It is designed to act as a drop-in replacement for the GNU Compiler Collection
 extensions. Its contributors include Apple, Microsoft, Google, ARM, Sony,
 Intel and Advanced Micro Devices (AMD). [0]
 
+The package in iceland repository enables clang-tools-extra, whereas the standard
+repo package does not.
+
 Upstream: https://clang.llvm.org/
 
 
