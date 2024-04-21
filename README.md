@@ -13,10 +13,9 @@ Any updates regarding the specifics of the repos will be provided here.
  |--ttf-cascadia-code (2111.01)
  |--ttf-comicmono (1.0.0)
 
---overrides
+--core
  |
  |--gcc (13.2.0, libgccjit enabled)
- |--rust (stub)
 
 --personal
  |
@@ -25,19 +24,15 @@ Any updates regarding the specifics of the repos will be provided here.
 --utils
  |
  |--acpi_call (1.2.2, nixOS maintained)
- |--clang (16.0.6, includes `clang-tools-extra`)
+ |--clang (18.1.4, includes `clang-tools-extra`)
  |--dotmg (1.1.3)
- |--emacs (29.1)
- |--ffmpeg (6.0, patch for binutils)
+ |--emacs (29.3)
  |--fuzzel (1.9.2)
  |--gobject-introspection (1.76.1)
- |--gzip (1.12)
- |--htop (3.2.2)
- |--kakoune (git, dev branch)
  |--librsvg (2.56.90)
- |--mailutils (3.16)
+ |--mailutils (3.17)
  |--os-prober (1.81)
  |--perfmode (3.4.0)
- |--texinfo (7.0.3)
+ |--texinfo (7.1)
 
 ```
