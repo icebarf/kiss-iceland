@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-BRANCH=icebarf
+make
+make PREFIX=/usr DESTDIR="$1" install
 
-git branch -m $BRANCH
-
-make clean install
