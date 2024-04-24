@@ -1,5 +1,14 @@
 #!/bin/sh -e
 
+COMMIT_ID="63558dc60562f46f74eba5d15dc9b1672fdb5dab"
+
+# setup the sources manually
+unzip $COMMIT_ID.zip
+cp tlp.run TLP-$COMMIT_ID/
+cd TLP-$COMMIT_ID
+
+# package build
+
 export DESTDIR="$1"
 
 export TLP_WITH_ELOGIND=0
