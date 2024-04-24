@@ -19,7 +19,8 @@ Any updates regarding the specifics of the repos will be provided here.
 
 --personal
  |
- |--slstatus (git)
+ |--slstatus (1.0.0-default)
+ |--slstatus-bb (1.0.0-bb)
 
 --utils
  |
