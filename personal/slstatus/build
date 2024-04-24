@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+BRANCH="battery-bridge"
+git checkout -B "$BRANCH"
+
 make
 make PREFIX=/usr DESTDIR="$1" install
 
