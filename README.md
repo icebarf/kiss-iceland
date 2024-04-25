@@ -37,6 +37,7 @@ Any updates regarding the specifics of the repos will be provided here.
  |--fuzzel (1.9.2)
  |--gobject-introspection (1.76.1)
  |--librsvg (2.56.90)
+ |--libinih (r58)
  |--mailutils (3.17)
  |--os-prober (1.81)
  |--perfmode (3.4.0)

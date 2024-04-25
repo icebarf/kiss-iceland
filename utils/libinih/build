@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+meson setup \
+	--prefix=/usr \
+	--libexecdir=/usr/lib \
+	-Ddistro_install=true \
+	-Dwith_INIReader=false \
+	. output
+
+ninja -C output
+ninja -C output install
