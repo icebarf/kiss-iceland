@@ -1,0 +1,9 @@
+basu make
+dbus
+libinih
+mesa
+meson make
+pipewire
+wayland
+wayland-protocols make
+xdg-desktop-portal
