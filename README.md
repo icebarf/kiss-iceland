@@ -7,15 +7,22 @@ Any updates regarding the specifics of the repos will be provided here.
 
 ## package list
 
+--core
+ |
+ |--gcc (13.2.0, libgccjit enabled)
+
+--dbus
+ |
+ |--basu (0.2.1)
+ |--dbus (1.14.10)
+ |--xdg-desktop-portal (1.18.4)
+ |--xdg-desktop-portal-wlr (0.7.1)
+
 --fonts
  |
  |--cantarell-fonts (0.303)
  |--ttf-cascadia-code (2111.01)
  |--ttf-comicmono (1.0.0)
-
---core
- |
- |--gcc (13.2.0, libgccjit enabled)
 
 --personal
  |
