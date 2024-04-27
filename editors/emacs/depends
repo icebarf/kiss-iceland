@@ -15,6 +15,7 @@ libpng
 librsvg
 libwebp
 libxml2
+mailutils
 ncurses
 pango
 sqlite
