@@ -1,8 +1,10 @@
 #!/bin/sh -e
 
 export DESTDIR="$1"
-./configure --prefix=/usr \
-		--without-guile
+# Temporary hack to fix the compiler flags cuz configure script is retarded
+export CFLAGS="$CFLAGS `pkg-config --cflags --libs ncurses`"
 
-LDFLAGS="$LDFLAGS -lncurses" make
+./configure 	--prefix=/usr \
+		--without-guile
+make
 make DESTDIR="$1" install
