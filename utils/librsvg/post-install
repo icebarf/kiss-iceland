@@ -1,0 +1,2 @@
+#!/bin/sh
+$KISS_SU gdk-pixbuf-query-loaders --update-cache
