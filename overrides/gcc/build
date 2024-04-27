@@ -2,6 +2,10 @@
 
 export DESTDIR="$1"
 
+## gcc build with libgccjit.so support (gcc JIT library)
+## --enable-host-shared is needed for this
+## as well as enabling `jit` in languages
+
 # Use lib not lib64 by default.
 sed '/m64=/s/lib64/lib/' gcc/config/i386/t-linux64 > _
 mv -f _ gcc/config/i386/t-linux64
@@ -40,7 +44,7 @@ esac
     --enable-__cxa_atexit \
     --enable-default-pie \
     --enable-default-ssp \
-    --enable-host-shared \ # required for libgccjit.so
+    --enable-host-shared \
     --enable-shared \
     --enable-threads \
     --enable-tls \
