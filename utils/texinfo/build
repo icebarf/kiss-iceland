@@ -8,5 +8,5 @@ make
 make install
 
 # Install TeX components
-mkdir -p $DESTDIR/usr/share/texmf
-make TEXMF=$DESTDIR/usr/share/texmf install-tex
+#mkdir -p $DESTDIR/usr/share/texmf
+#make TEXMF=$DESTDIR/usr/share/texmf install-tex
