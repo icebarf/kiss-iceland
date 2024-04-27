@@ -1,7 +1,8 @@
 #!/bin/sh -e
 
 export DESTDIR="$1"
-./configure --prefix=/usr
+./configure --prefix=/usr \
+		--without-guile
 
-make
+LDFLAGS="$LDFLAGS -lncurses" make
 make DESTDIR="$1" install

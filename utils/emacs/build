@@ -33,6 +33,7 @@ make extraclean
 	     --without-gconf \
 	     --without-gsettings \
 	     --without-m17n-flt \
+	     --without-mailutils \
 	     --without-selinux \
 	     --without-x \
 	     --without-xft \
