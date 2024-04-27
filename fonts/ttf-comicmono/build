@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
-PREFIX=/usr
-FONT_DIR=$DESTDIR/$PREFIX/share/fonts/TTF/ComicMono
+export DESTDIR"$1"
+FONT_DIR=$DESTDIR/usr/share/fonts/TTF/ComicMono
 
 mkdir -p $FONT_DIR
 

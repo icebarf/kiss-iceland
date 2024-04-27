@@ -1,9 +1,11 @@
 #!/bin/sh -e
 
+export DESTDIR="$1"
+
 OUT="$DESTDIR/usr/share/fonts/TTF/cascadia-code"
 OUTST="$DESTDIR/usr/share/fonts/TTF/cascadia-code/static"
 
-VER="2111.01"
+VER="$2"
 FILE="CascadiaCode-$VER.zip"
 
 unzip $FILE

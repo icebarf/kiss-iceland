@@ -1,12 +1,13 @@
 #!/bin/sh -e
 
+export DESTDIR="$1"
+
 script=examples/turn_off_gpu.sh
 
 mkdir -p $DESTDIR/usr/bin
 
-
-$KISS_SU make
-$KISS_SU make install
+make
+make DESTDIR="$1" PREFIX=/usr install
 
 chmod +x $script
 cp $script $DESTDIR/usr/bin/turn_off_gpu -v
