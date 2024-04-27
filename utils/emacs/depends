@@ -6,7 +6,6 @@ freetype-harfbuzz
 gcc
 gdk-pixbuf
 glib
-glibc
 gmp
 gnutls
 gtk+3
