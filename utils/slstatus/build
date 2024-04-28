@@ -2,9 +2,6 @@
 
 export DESTDIR="$1"
 
-BRANCH="battery-bridge"
-git checkout -B "$BRANCH"
-
 make
 make PREFIX=/usr DESTDIR="$1" install
 
