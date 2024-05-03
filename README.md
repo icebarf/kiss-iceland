@@ -21,6 +21,7 @@ Any updates regarding the specifics of the repos will be provided here.
  |
  |--gcc (13.2.0, libgccjit enabled)
  |--clang (18.1.5, includes `clang-tools-extra`)
+ |--rust (override)
 
 --utils
  |
