@@ -5,8 +5,8 @@ frameslist=`emacsclient --eval '(frame-list)' 2>/dev/null | grep -E -o '(frame)+
 
 if [ "$(echo "$frameslist" | sed -n '$=')" -ge 2 ] ;then
     # prevent creating another frame if there is at least one present.
-    emacsclient "$@"
+    emacsclient -n "$@"
 else
     # Create one if there is no window yet.
-    emacsclient -c "$@"
+    emacsclient -n -c "$@"
 fi
