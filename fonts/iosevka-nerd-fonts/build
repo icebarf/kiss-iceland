@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+find ./ -name '*Windows*' -exec rm -rf {} +
+
+install -dm755          "$DESTDIR/usr/share/fonts/TTF"
+install -Dm644 -- *.ttf "$DESTDIR/usr/share/fonts/TTF"

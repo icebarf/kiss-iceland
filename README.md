@@ -16,6 +16,7 @@ Any updates regarding the specifics of the repos will be provided here.
  |--cantarell-fonts (0.303)
  |--ttf-cascadia-code (2111.01)
  |--ttf-comicmono (1.0.0)
+ |--iosevka-nerd-fonts (3.2.1)
 
 --overrides
  |
