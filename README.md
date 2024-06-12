@@ -1,8 +1,7 @@
 ```
 # iceland
 
-This is my kiss linux user software repository. The `personal` repo contains software specific to my machine, other repos are generally machine agnostic.
-
+This is my kiss linux user software repository.
 Any updates regarding the specifics of the repos will be provided here.
 
 ## package list
@@ -20,8 +19,8 @@ Any updates regarding the specifics of the repos will be provided here.
 
 --overrides
  |
- |--gcc (13.2.0, libgccjit enabled)
- |--clang (18.1.5, includes `clang-tools-extra`)
+ |--gcc (14.1.0, libgccjit enabled)
+ |--clang (18.1.7, includes `clang-tools-extra`)
  |--rust (override)
 
 --utils
