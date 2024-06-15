@@ -1,0 +1,39 @@
+diff --git a/gcc/jit/jit-playback.cc b/gcc/jit/jit-playback.cc
+index 6baa838af..b3b6fce1d 100644
+--- a/gcc/jit/jit-playback.cc
++++ b/gcc/jit/jit-playback.cc
+@@ -18,6 +18,8 @@ You should have received a copy of the GNU General Public License
+ along with GCC; see the file COPYING3.  If not see
+ <http://www.gnu.org/licenses/>.  */
+ 
++#include <pthread.h>
++
+ #include "config.h"
+ #define INCLUDE_MUTEX
+ #include "libgccjit.h"
+diff --git a/gcc/jit/jit-recording.cc b/gcc/jit/jit-recording.cc
+index 68a2e860c..223892de6 100644
+--- a/gcc/jit/jit-recording.cc
++++ b/gcc/jit/jit-recording.cc
+@@ -18,6 +18,8 @@ You should have received a copy of the GNU General Public License
+ along with GCC; see the file COPYING3.  If not see
+ <http://www.gnu.org/licenses/>.  */
+ 
++#include <pthread.h>
++
+ #include "config.h"
+ #include "system.h"
+ #include "coretypes.h"
+diff --git a/gcc/jit/libgccjit.cc b/gcc/jit/libgccjit.cc
+index 445c0d0e0..73d21ecaf 100644
+--- a/gcc/jit/libgccjit.cc
++++ b/gcc/jit/libgccjit.cc
+@@ -18,6 +18,8 @@ You should have received a copy of the GNU General Public License
+ along with GCC; see the file COPYING3.  If not see
+ <http://www.gnu.org/licenses/>.  */
+ 
++#include <pthread.h>
++
+ #include "config.h"
+ #define INCLUDE_MUTEX
+ #include "system.h"

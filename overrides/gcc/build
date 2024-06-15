@@ -6,6 +6,8 @@ export DESTDIR="$1"
 ## --enable-host-shared is needed for this
 ## as well as enabling `jit` in languages
 
+patch -p1 < fix-poisoned-calloc-libgccjit.patch
+
 # Use lib not lib64 by default.
 sed '/m64=/s/lib64/lib/' gcc/config/i386/t-linux64 > _
 mv -f _ gcc/config/i386/t-linux64
